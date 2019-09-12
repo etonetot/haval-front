@@ -1,4 +1,4 @@
-# vuet
+# Haval Front
 
 ## Project setup
 ```
