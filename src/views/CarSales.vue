@@ -153,11 +153,14 @@
                 if (!years.length)
                     return [];
 
-                let arr = [];
-                years.forEach(year=>{
-                    let row = { dt: year+2000 };
-                    arr.push(row);
-                });    
+                years.reverse();
+                let arr = years.map( year => { 
+                    return { dt: year+2000 } 
+                });
+                // years.forEach(year=>{
+                //     let row = { dt: year+2000 };
+                //     arr.push(row);
+                // });    
                 
                 this.sales.forEach(item=>{
                     let indYear = years.indexOf(item.year);
